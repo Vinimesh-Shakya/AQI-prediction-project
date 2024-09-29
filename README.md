@@ -1,7 +1,22 @@
-# AQI-prediction-project
-In this project, the goal is to predict Air Quality Index (AQI) using a variety of regression models and a deep learning approach.
+# Air Quality Prediction Using Machine Learning
+
+This repository contains a Jupyter notebook focused on predicting Air Quality Index (AQI) using various machine learning models. The project explores data processing, feature engineering, and the implementation of several regression models to predict AQI from environmental data.
+
+## Overview
+
+The goal of this project is to predict the Air Quality Index (AQI) based on various environmental features. AQI is a key indicator of air pollution and understanding its values can help in environmental monitoring and public health interventions.
+
+
+## Dataset
 Using the dataset Air Quality Data in India (2015 - 2020) from kaggle,
 link: https://www.kaggle.com/datasets/rohanrao/air-quality-data-in-india
+
+The dataset used contains the following features:
+- **City**: Name of the city where data was recorded
+- **Date**: Date of the data entry
+- **PM2.5**, **PM10**, **NO**, **NO2**, **NOx**, **NH3**, **CO**, **SO2**, **O3**, **Benzene**, **Toluene**, **Xylene**: Various environmental factors measured in the air
+- **AQI**: The Air Quality Index
+- **AQI_Bucket**: A categorical classification of AQI values (e.g., Good, Moderate, Poor)
 
 ## Dataset Attributes
 
@@ -24,22 +39,41 @@ link: https://www.kaggle.com/datasets/rohanrao/air-quality-data-in-india
 | `AQI`        | Air Quality Index                               |
 | `AQI_Bucket` | Air Quality classification (Good, Moderate, etc.)|
 
+## Features
 
-I employed seven different regression algorithms to find the most accurate predictor of AQI. These models include:
-# Models : R2-score
-- Linear Regression : 0.732
-- Decision Tree Regressor : 0.693
-- Random Forest Regressor : 0.854
-- AdaBoost Regressor : 0.383
-- Gradient Boosting Regressor : 0.802
-- K-Neighbors Regressor : 0.840
-- XGBoost Regressor : 0.833
+- Preprocessing of AQI data
+- Exploratory Data Analysis (EDA)
+- Implementation of multiple machine learning regression models
+- Performance evaluation using metrics like R² score
 
-Additionally, I implemented a **Feed-Forward Neural Network (FFNN)** trained over **150 epochs** to capture complex non-linear patterns in the data.
-**Also got R2-score of 0.851**
+## Models Used
 
-# Best Model Performance
-- The Random Forest Regressor achieved the highest performance, with an R² score of 0.854.
-- The Feed-Forward Neural Network followed closely with an R² score of 0.851.
-- The K-Neighbors Regressor following R² score of 0.840.
-- The XGBoost Regressor also performed well, with an R² score of 0.833.
+The following regression models have been implemented to predict AQI:
+- Linear Regression
+- Decision Tree Regressor
+- Random Forest Regressor
+- AdaBoost Regressor
+- Gradient Boosting Regressor
+- K-Neighbors Regressor
+- XGBoost Regressor
+- Feed-Forward Neural Network
+
+## Performance Evaluation
+
+Model performance was measured using the R² score, with the following results:
+- **Random Forest Regressor**: R² = 0.854
+- **Feed-Forward Neural Network**: R² = 0.851
+- **XGBoost Regressor**: R² = 0.833
+
+
+## Installation and Usage
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Vinimesh-Shakya/AQI-prediction-project
+   ```
+2. Run the notebook using Jupyter Notebook or JupyterLab.
+   ```bash
+   jupyter notebook
+   ```
