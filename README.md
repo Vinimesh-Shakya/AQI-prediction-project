@@ -63,7 +63,12 @@ The following regression models have been implemented to predict AQI:
 Model performance was measured using the R² score, with the following results:
 - **Random Forest Regressor**: R² = 0.854
 - **Feed-Forward Neural Network**: R² = 0.851
+- **K-Neighbors Regressor**: R² = 0.840
 - **XGBoost Regressor**: R² = 0.833
+- **Gradient Boost Regressor**: R² = 0.802
+- **Linear Regression**: R² = 0.735
+- **Decision Tree**: R² = 0.693
+- **Adaboost Regressor**: R² = 0.383
 
 
 ## Installation and Usage
