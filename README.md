@@ -3,6 +3,28 @@ In this project, the goal is to predict Air Quality Index (AQI) using a variety 
 Using the dataset Air Quality Data in India (2015 - 2020) from kaggle,
 link: https://www.kaggle.com/datasets/rohanrao/air-quality-data-in-india
 
+## Dataset Attributes
+
+| Attribute    | Description                                     |
+|--------------|-------------------------------------------------|
+| `City`       | Name of the city where data was recorded        |
+| `Datetime`   | Date and time of the data entry                 |
+| `PM2.5`      | Particulate Matter < 2.5 µm (µg/m³)             |
+| `PM10`       | Particulate Matter < 10 µm (µg/m³)              |
+| `NO`         | Nitric Oxide (µg/m³)                            |
+| `NO2`        | Nitrogen Dioxide (µg/m³)                        |
+| `NOx`        | Nitrogen Oxides (µg/m³)                         |
+| `NH3`        | Ammonia (µg/m³)                                 |
+| `CO`         | Carbon Monoxide (mg/m³)                         |
+| `SO2`        | Sulfur Dioxide (µg/m³)                          |
+| `O3`         | Ozone (µg/m³)                                   |
+| `Benzene`    | Benzene (µg/m³)                                 |
+| `Toluene`    | Toluene (µg/m³)                                 |
+| `Xylene`     | Xylene (µg/m³)                                  |
+| `AQI`        | Air Quality Index                               |
+| `AQI_Bucket` | Air Quality classification (Good, Moderate, etc.)|
+
+
 I employed seven different regression algorithms to find the most accurate predictor of AQI. These models include:
 # Models : R2-score
 - Linear Regression : 0.732
